@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.AdminMain"
+    android:background="@mipmap/bg_2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/pageTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome\nAdmin!!"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"/>
+
+    <View
+        android:id="@+id/classroomCard"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/pageTitle"
+        android:layout_margin="15dp"
+        android:background="@mipmap/classroomcard"
+        android:transitionName="cardTransition"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <View
+        android:id="@+id/LabCard"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/classroomCard"
+        android:layout_margin="15dp"
+        android:background="@mipmap/labcard"
+        android:transitionName="cardTransition"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <View
+        android:id="@+id/SeminarCard"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/LabCard"
+        android:layout_margin="15dp"
+        android:background="@mipmap/seminarcard"
+        android:transitionName="cardTransition"
+        android:clickable="true"
+        android:focusable="true"/>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/AddRoomBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:src="@drawable/add_btn"/>
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.FormActivity"
+    android:background="@mipmap/bg14">
+
+    <TextView
+        android:id="@+id/RoomName"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:text="Name"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:transitionName="cardTransition2"
+        android:background="@mipmap/titlebar" />
+
+    <RelativeLayout
+        android:id="@+id/detailLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/RoomName"
+        android:background="@drawable/white_round_bg"
+        android:layout_margin="20sp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                    <HorizontalScrollView
+                        android:id="@+id/HScrollView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/time1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="9am-10am"
+                        android:layout_weight="1"
+                        android:paddingHorizontal="10dp"/>
+
+                    <CheckBox
+                        android:id="@+id/time2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="10am-11am"
+                        android:layout_weight="1"
+                        android:paddingHorizontal="10dp"/>
+
+                    <CheckBox
+                        android:id="@+id/time3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="11am-12pm"
+                        android:layout_weight="1"
+                        android:paddingHorizontal="10dp"/>
+
+                            <CheckBox
+                                android:id="@+id/time4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="12pm-1pm"
+                                android:layout_weight="1"
+                                android:paddingHorizontal="10dp"/>
+
+                            <CheckBox
+                                android:id="@+id/time5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="1pm-2pm"
+                                android:layout_weight="1"
+                                android:paddingHorizontal="10dp"/>
+
+                            <CheckBox
+                                android:id="@+id/time6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="2pm-3pm"
+                                android:layout_weight="1"
+                                android:paddingHorizontal="10dp"/>
+
+                            <CheckBox
+                                android:id="@+id/time7"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="3pm-4pm"
+                                android:layout_weight="1"
+                                android:paddingHorizontal="10dp"/>
+
+                            <CheckBox
+                                android:id="@+id/time8"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="4pm-5pm"
+                                android:layout_weight="1"
+                                android:paddingHorizontal="10dp"/>
+
+                            <CheckBox
+                                android:id="@+id/time9"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="5pm-6pm"
+                                android:layout_weight="1"
+                                android:paddingHorizontal="10dp"/>
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+
+        <EditText
+            android:id="@+id/title1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:hint="Title"
+            android:layout_below="@id/HScrollView"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="20sp"
+            android:ems="10"
+            android:inputType="textPersonName"/>
+
+        <EditText
+            android:id="@+id/descriptionBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="5"
+            android:layout_marginHorizontal="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/title1"
+            android:layout_marginTop="20dp"
+            android:hint="Description of Seminar"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:background="@drawable/white_round_bg"
+            android:paddingVertical="15dp"
+            android:paddingHorizontal="10dp"/>
+
+        <EditText
+            android:id="@+id/organizingBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/descriptionBox"
+            android:layout_marginTop="20dp"
+            android:hint="Organizer"
+            android:paddingVertical="15dp"
+            android:inputType="textPersonName"
+            android:paddingHorizontal="15dp"/>
+
+        <EditText
+            android:id="@+id/audienceNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_below="@id/organizingBody"
+            android:hint="Expected Audience No."
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20sp"
+            android:ems="10"
+            android:inputType="number"
+            android:paddingVertical="15dp"
+            android:paddingHorizontal="15dp"/>
+
+                <TextView
+                    android:id="@+id/splReqTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/audienceNo"
+                    android:layout_marginTop="20sp"
+                    android:text="Special Requirements"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="30dp"/>
+
+        <EditText
+            android:id="@+id/splRequirement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="5"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/splReqTitle"
+            android:layout_marginTop="5sp"
+            android:layout_marginHorizontal="20sp"
+            android:hint="Special Requirements"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:background="@drawable/white_round_bg"
+            android:paddingVertical="15dp"
+            android:paddingHorizontal="10dp"/>
+
+        <Button
+            android:id="@+id/bookSeminar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20sp"
+            android:layout_below="@id/splRequirement"
+            android:text="Book"
+            android:background="@drawable/blue_btn"
+            android:paddingHorizontal="40dp"
+            android:textColor="#fff"
+            android:layout_marginBottom="30dp"/>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
